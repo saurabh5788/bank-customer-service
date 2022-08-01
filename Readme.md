@@ -1,4 +1,5 @@
-# Profiles
+Profiles
+========
 - local
 - aws
 
@@ -19,6 +20,16 @@
 - H2 (local Profile)
 - MySQL (aws Profile)
 
+# Local Setup
+- Clone this Repository
+- Build using command
+`
+mvnw clean install
+`
+- Run using command
+`
+java -jar target\customer-service-local.jar
+`
 
 # Available URLs
 - http://localhost:8081/customer/api-docs
