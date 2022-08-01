@@ -24,13 +24,13 @@ Core Technologies & Version
 # Local Setup
 - Clone this Repository
 - Build using command
-
-		mvnw clean install
-
+```
+mvnw clean install
+```
 - Run using command
-`
-		java -jar target\customer-service-local.jar
-`
+```
+java -jar target\customer-service-local.jar
+```
 
 # Available URLs
 - http://localhost:8081/customer/api-docs
