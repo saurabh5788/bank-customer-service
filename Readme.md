@@ -1,26 +1,26 @@
-#Profiles
+# Profiles
 - local
 - aws
 
-#Core Technologies & Version
+# Core Technologies & Version
 - Spring Boot v2.6.10 with Spring v5.3.22
 - Embedded Server Jetty
 - Logging Log4j
 - Spring Doc OpenAPI (Swagger)
 - Hikari Connection Pooling (Spring Boot Default)
 
-#Others
+# Others
 - Lombok
 - Apache Commons
 	- lang3
 - Micrometer Prometheus
 
-#Databases
+# Databases
 - H2 (local Profile)
 - MySQL (aws Profile)
 
 
-#Available URLs
+# Available URLs
 - http://localhost:8081/customer/api-docs
 - http://localhost:8081/customer/api-docs.yaml
 - http://localhost:8081/customer/actuator
