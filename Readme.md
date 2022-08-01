@@ -3,7 +3,8 @@ Profiles
 - local
 - aws
 
-# Core Technologies & Version
+Core Technologies & Version
+===========================
 - Spring Boot v2.6.10 with Spring v5.3.22
 - Embedded Server Jetty
 - Logging Log4j
