@@ -28,9 +28,9 @@ Core Technologies & Version
 mvnw clean install
 `
 - Run using command
-`
-java -jar target\customer-service-local.jar
-`
+
+	java -jar target\customer-service-local.jar
+
 
 # Available URLs
 - http://localhost:8081/customer/api-docs
