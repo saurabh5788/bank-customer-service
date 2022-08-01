@@ -1,0 +1,1 @@
+CREATE TABLE TESTING (id int, name varchar);

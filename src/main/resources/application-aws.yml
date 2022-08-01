@@ -1,0 +1,45 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  security:
+    enabled: false
+  port: 9000
+  
+  
+spring:
+  sql:
+    init:
+      platform: mysql
+      mode: never
+      continue-on-error: false
+  datasource:
+    url: jdbc:h2:mem:customerdb;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: customer
+    password: customer
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true 
+    generate-ddl: false
+    hibernate.ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        generate_statistics: true
+        format_sql: true
+        use_sql_comments: true
+     
+logging:
+  file: logs/application-debug.log
+  pattern:
+    console: "%d{yyyy-MM-dd} | %d{HH:mm:ss.SSS} | %thread | %5p | %logger{25} | %m%n"
+    file: "%d{yyyy-MM-dd} | %d{HH:mm:ss.SSS} | %thread | %5p | %logger{25} | %m%n"
+  level:
+    org.springframework.web: INFO
+    com.learning.bank.customer.customerservice: INFO
+    org.hibernate: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.cache: DEBUG
+    org.hibernate.stat: DEBUG

@@ -1,0 +1,1 @@
+INSERT INTO TESTING (id, name) values (1, 'Test');
